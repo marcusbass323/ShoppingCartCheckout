@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
 
 import SubTotal from './components/Subtotal/Subtotal';
 import PickupSavings from './components/PickupSavings/PickupSavings';
@@ -23,13 +23,13 @@ this.state = {
   render() {
     return (
       <div className="container">
-        <Grid className="purchase-card">        
+        <Col className="purchase-card">        
           <SubTotal price={this.state.total.toFixed(2)} />
           <PickupSavings price={this.state.PickupSavings} />
           <TaxesFees taxes={this.state.taxes.toFixed(2)} />
-          <hr />
+          <hr/>
         <EstimatedTotal price={this.state.EstimatedTotal.toFixed(2)} />
-        </Grid>        
+        </Col>        
       </div>
     );
   }
