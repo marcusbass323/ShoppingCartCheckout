@@ -4,7 +4,9 @@ import { Col } from 'react-bootstrap';
 import SubTotal from './components/Subtotal/Subtotal';
 import PickupSavings from './components/PickupSavings/PickupSavings';
 import TaxesFees from './components/TaxesFees/TaxesFees';
-import EstimatedTotal from './components/EstimatedTotal/EstimatedTotal'
+import EstimatedTotal from './components/EstimatedTotal/EstimatedTotal';
+import ItemDetails from './components/ItemDetails/ItemDetails';
+import PromoCode from './components/PromoCode/PromoCode'
 import './App.css';
 
 class App extends Component {
@@ -28,7 +30,10 @@ this.state = {
           <PickupSavings price={this.state.PickupSavings} />
           <TaxesFees taxes={this.state.taxes.toFixed(2)} />
           <hr/>
-        <EstimatedTotal price={this.state.EstimatedTotal.toFixed(2)} />
+          <EstimatedTotal price={this.state.EstimatedTotal.toFixed(2)} />
+          <ItemDetails price={this.state.EstimatedTotal.toFixed(2)} />
+          <hr />
+          <PromoCode />
         </Col>        
       </div>
     );
