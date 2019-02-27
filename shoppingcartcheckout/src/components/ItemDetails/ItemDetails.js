@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Collapse, Row, Col } from 'react-bootstrap';
+import { Button, Collapse, } from 'react-bootstrap';
 
 export default class ItemDetails extends Component {
     constructor(props) {

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
     Button,
     Collapse,
@@ -10,15 +10,21 @@ import {
     FormControl
 } from 'react-bootstrap'
 
-class PromoCode extends React.Component {
+import { connect } from 'react-redux';
+import { handleChange } from '../../actions/promoCodeActions';
+
+class PromoCodeDiscount extends React.Component {
     constructor(props) {
         super(props);
         
         this.state = {
             open: false,
-            value: ''
         };
     }
+
+    handleChange = e => {
+        this.props.handleChange(e);
+    };
 
     render() {
         return (
@@ -53,6 +59,7 @@ class PromoCode extends React.Component {
                                         disabled={this.props.isDisabled}
                                         onClick={this.props.giveDiscount}
                                     >
+                                        Apply
                                     </Button>
                                 </Form>
                             </Col>
@@ -64,4 +71,8 @@ class PromoCode extends React.Component {
     }
 }
 
-export default PromoCode;
+const mapStateToProps = state => ({
+    promoCode: state.promoCode.value
+});
+
+export default connect(mapStateToProps, {handleChange})(PromoCodeDiscount);
