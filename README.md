@@ -1,6 +1,6 @@
 <h1>Shopping Checkout App</h1>
 
-<h2>Tech stack</h2>
+<h2>Tech stack:</h2>
 <ul>
   <li>React</li>
   <li>Redux</li>
