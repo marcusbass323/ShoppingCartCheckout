@@ -20,3 +20,8 @@
 to show a full preview of the product. The React Image Zoom dependency adds the
 ability to zoom in on the product image.</p>
 <img src="https://media.giphy.com/media/cdXxhw7QCIXEBtJarM/giphy.gif"/>
+
+<p>3 - The user can enter a promo code that fully reduces the price of the jersey.</p>
+  <img src="https://media.giphy.com/media/1g28CFokGUB2gHV3sY/giphy.gif"/>
+  
+  Thank you for your interest.
