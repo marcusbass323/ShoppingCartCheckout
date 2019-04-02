@@ -15,3 +15,8 @@
   additional information on the estimated total and the option to pick up
   the item in store.</p>
   <img src="https://media.giphy.com/media/g0EofuTJM0iszrLWUo/giphy.gif"/>
+
+<p>2 - The see item details button has an onclick function that uses a collapse element
+to show a full preview of the product. The React Image Zoom dependency adds the
+ability to zoom in on the product image.</p>
+<img src="https://media.giphy.com/media/cdXxhw7QCIXEBtJarM/giphy.gif"/>
